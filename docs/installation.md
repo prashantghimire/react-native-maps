@@ -104,6 +104,17 @@ Add to `ios/_YOUR_PROJECT_NAME_/AppDelegate.m:
 ...
 ```
 
+Use `PROVIDER_GOOGLE` in your `MapView` component.
+
+```
+import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
+
+<MapView 
+  provider={PROVIDER_GOOGLE} 
+  style={styles.map}
+/>
+```
+
 ## Notes on running on a real ios device
 
 The steps are as described in https://facebook.github.io/react-native/docs/running-on-device.html , however instead of opening the .xcodeproj file you should open .xcworkspace file.
